@@ -1,0 +1,8 @@
+<h1 class="ui header">Custom Login Page with Sign In Widget</h1>
+<div *ngIf=" !isAuthenticated">
+  <button id="login-button" class="ui primary button" role="button" routerLink="/login">Login</button>
+</div>
+
+<div *ngIf="isAuthenticated && userName">
+  <p>Welcome back, {{ userName }}!</p>
+  </div>
